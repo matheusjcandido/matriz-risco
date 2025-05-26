@@ -1,0 +1,36 @@
+# .streamlit/config.toml
+# Configurações específicas para Streamlit Cloud
+# Criar pasta .streamlit na raiz e colocar este arquivo dentro
+
+[global]
+dataFrameSerialization = "legacy"
+showWarningOnDirectExecution = false
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+fileWatcherType = "poll"
+
+[browser]
+gatherUsageStats = false
+serverAddress = "0.0.0.0"
+
+[theme]
+# Cores da identidade SESP-PR
+primaryColor = "#1f4e79"              # Azul SESP
+backgroundColor = "#ffffff"            # Branco
+secondaryBackgroundColor = "#f0f2f6"   # Cinza claro
+textColor = "#262730"                  # Cinza escuro
+font = "sans serif"
+
+[client]
+caching = true
+showErrorDetails = true
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
